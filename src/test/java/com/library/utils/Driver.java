@@ -10,9 +10,7 @@ public class Driver {
 
     private static  WebDriver driver;
 
-
     private Driver(){}  // the purpose is to prevent compiler to create default construct
-
 
     public static WebDriver getDriver(){
         if(driver ==null){
