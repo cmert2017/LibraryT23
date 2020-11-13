@@ -5,6 +5,7 @@ import com.library.utils.ConfigurationReader;
 import com.library.utils.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 
 public class Login_StepDefinitions_Bat {
 LoginPage login = new LoginPage();
@@ -26,6 +27,12 @@ LoginPage login = new LoginPage();
     }
     @Then("dashboard should be displayed")
     public void dashboard_should_be_displayed() {
+
+
+        String actual = Driver.getDriver().getCurrentUrl();
+        Assert.assertTrue(actual.contains("dashboard"));
+
+
 
 
 
