@@ -27,8 +27,7 @@ LoginPage login = new LoginPage();
     @Then("dashboard should be displayed")
     public void dashboard_should_be_displayed() {
 
-        System.out.println("user sees the dashboard");
-        System.out.println("hi");
+
 
     }
 
