@@ -22,13 +22,12 @@
 Feature: User management
 
   @us2_ac1
-  Scenario Outline: Librarian should be able to log in and see the Dashboard page
+  Scenario: Librarian should be able to log in and see the Dashboard page
     Given user on the login page
     And user logs in as a "librarian"
     Then dashboard should be displayed
 
 
-    Examples:
 
 
 
